@@ -28,9 +28,31 @@ $(function(){
 			$html.addClass("wechat");	//微信
 		}
 	}
+	var app_nav = $(".app-nav").find("a");
+		app_list = $(".app-list"),
+		app_content = $(".app-content"),
+		app_article = app_content.find("iframe");
+	//主导航
+	app_nav.on("click",function(){
+		var list = $(this).attr("data-target");
+		app_list.toggle();
+		$(this).toggleClass("active").parent().siblings().toggle();
+		$("#" + list).toggleClass("active");
+	});
+	//打开文章
+	app_list.find("a").on("click",function(){
+		var _title = $(this).text(),
+			_href = $(this).attr("href");
+		console.log(_title);
+		app_content.addClass("show").find("h2").text(_title).on("click",function(){
+			app_content.removeClass("show");
+		});
+		app_article.attr("src",_href);
+		return false;
+	});
 });
 //控制台显示
-console.log("NonCode \n The words of the future.")
+console.log("NonCode\n The words of the future.")
 //百度统计
 var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
 document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Febeef678abc771e049ee79f9644b1532' type='text/javascript'%3E%3C/script%3E"));

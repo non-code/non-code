@@ -1,22 +1,45 @@
 /* COMMON */
 
 /* GLOBAL */
-
+html.noncode{height:100%}
+body{width:100%}
+html.noncode body{height:100%;overflow:hidden;background:#000}
+.app-wrapper{width:100%;height:100%;overflow:hidden}
 /* PHONES */
 @media (max-width:767px){
-
+	#logo{display:none}
+	/* NAV */
+	.app-nav ul{padding:20px 0}
+	.app-nav li{margin:0 10%;margin:0 20px 20px}
+	.app-nav li:last-child{margin-bottom:0}
+	.app-nav a{display:block;font-family:"code";font-size:20px;color:rgba(255,255,255,.5);line-height:46px;border:2px solid rgba(255,255,255,.2);letter-spacing:4px;text-align:center}
+	.app-nav a.active{position:absolute;z-index:2;top:0;margin:0 -20px;width:100%;background:#000;border-color:transparent;border-bottom-color:rgba(255,255,255,.2)}
+	/* LIST */
+	.app-list{display:none;position:absolute;top:50px;bottom:0;width:100%;background:#000;overflow-y:scroll}
+	.app-list>div{display:none}
+	.app-list>div.active{display:block}
+	.app-list ul{padding:20px 0}
+	.app-list li{margin:0 20px 20px}
+	.app-list ul li:last-child{margin-bottom:0}
+	.app-list a{display:block;padding:0 10px;border:1px solid rgba(255,255,255,.2);font-size:14px;color:rgba(255,255,255,.5);line-height:38px}
+	/* CONTENT */
+	.app-content{display:none;position:absolute;top:0;left:0;width:100%;height:100%;z-index:10}
+	.app-content.show{display:block}
+	.app-content .content-title{background:#fff;border-bottom:1px solid #ddd;font-size:14px;line-height:49px;text-align:center}
+	.app-content .content-main{position:absolute;top:50px;bottom:0;width:100%}
+	.app-content iframe{width:100%;height:100%;border:0}
+	/* ARTICLE */
+	.app-article{background:#fff}
+	.app-article .app-nav{display:none}
+	.app-post
 }
 /* TABLETS */
-@media (min-width:768px){
-
+@media (min-width:768px) and (max-width:1365px){
+	
 }
 /* DESKTOPS */
-@media (min-width:1024px){
+@media (min-width:1366px){
 
-}
-/* LARGE DESKTOPS */
-@media (min-width:1440px){
-	
 }
 /* FONTS */
 @font-face{
