@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="cmn-hans">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Cache-Control" content="no-siteapp">
+	<meta name="renderer" content="webkit">
+	<meta name="format-detection" content="telephone=no,email=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="MobileOptimized" content="320">
+	<meta name="full-screen" content="yes">
+	<meta name="browsermode" content="application">
+	<meta name="x5-fullscreen" content="true">
+	<meta name="x5-page-mode" content="app">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="apple-mobile-web-app-title" content="NonCode">
+	<meta name="application-name" content="&nbsp;">
+	<meta name="msapplication-TileColor" content="#000000">
+	<meta name="msapplication-square70x70logo" content="assets/img/icons/windows-tiny.png">
+	<meta name="msapplication-square150x150logo" content="assets/img/icons/windows-square.png">
+	<meta name="msapplication-wide310x150logo" content="assets/img/icons/windows-wide.png">
+	<meta name="msapplication-square310x310logo" content="assets/img/icons/windows-large.png">
+	<meta name="msapplication-tap-highlight" content="no">
+	<meta name="description" content="The words of the future.">
+	<meta name="keywords" content="code,noncode,超越代码">
+	<meta name="author" content="Jinx">
+	<title>CSS - NONCODE · 超越代码</title>
+	<link rel="apple-touch-icon" href="assets/img/icons/apple-touch-icon.png">
+	<link rel="shortcut icon" href="assets/img/icons/favicon.ico">
+	<style>
+		body{margin:0;width:100%;background:#272822;color:#8f908a;font-family:'Consolas';font-size:18px;line-height:24px}
+		.attributes{margin:0 0 0 32px;padding:5px 0 5px 32px}
+		.attributes li{border-left:1px dotted #464741}
+		.attributes li:first-child,li:last-child{border:0}
+		.attributes p{margin:0;padding-left:40px;color:#f8f8f2}
+		.attributes li:first-child p,li:last-child p{padding-left:0}
+		.se{color:#a6e22e}
+		.attr,.value{color:#66d9ef}
+		.indent{padding-left:40px}
+		.number{color:#ae81ff}
+		.unit{color:#f92672}
+		.url,.key{color:#fd971f;font-style:italic}
+		.note{color:#75715e}
+		.string{color:#e6db67}
+	}
+	</style>	
+</head>
+<body>
+	<ol class="attributes">
+		<li>
+			<p>
+				[class*="selecter"]{
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="note">
+					/* Display */
+				</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">display</span>:<span class="value">none</span>;
+				<span class="note">/* block | inline | inline-block | inherit */</span>
+			</p>
+			<p>
+				<span class="attr">visibility</span>:<span class="value">visible</span>;
+				<span class="note">/* hidden | collapse */</span>
+			</p>
+			<p>
+				<span class="attr">opacity</span>:<span class="number">.1</span>;
+			</p>
+			<p>
+				<span class="attr">cursor</span>:<span class="value">auto</span>;
+				<span class="note">/* default | pointer | move | crosshair | text | wait | help | e-resize | ne-resize | nw-resize | n-resize | se-resize | sw-resize | s-resize | w-resize*/</span>
+			</p>
+		</li>
+		<li></li>
+		<li>
+			<p>
+				<span class="note">
+					/* List-style */
+				</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">list-style</span>:<span class="value">square inside url</span>(<span class="url">xxx.png</span>);
+				
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">list-style-type</span>:<span class="value">none</span>;
+				<span class="note">/* disc | circle | square | decimal */</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">list-style-position</span>:<span class="value">outside</span>;
+				<span class="note">/* inside */</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">list-style-image</span>:<span class="value">none</span>;
+				<span class="note">/* url(xxx.png) */</span>
+			</p>
+		</li>
+		<li></li>
+		<li>
+			<p>
+				<span class="note">
+					/* Positioning */
+				</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">position</span>:<span class="value">static</span>;
+				<span class="note">/* relative | absolute | fixed */</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">top</span>:<span class="number">0</span>;
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">right</span>:<span class="number">0</span>;
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">bottom</span>:<span class="number">0</span>;
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">left</span>:<span class="number">0</span>;
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">z-index</span>:<span class="number">1</span>;
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">clip</span>:<span class="value">rect(0</span>,<span class="number">100</span><span class="unit">px</span>,<span class="number">100</span><span class="unit">px</span>,<span class="number">0</span>)</span>;
+				<span class="note">/*  */</span>
+			</p>
+		</li>
+		<li></li>
+		<li>
+			<p>
+				<span class="note">
+					/* Float */
+				</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">float</span>:<span class="value">none</span>;
+				<span class="note">/* left | right */</span>
+			</p>
+		</li>
+		<li></li>
+		<li>
+			<p>
+				<span class="note">
+					/* Clear */
+				</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">clear</span>:<span class="value">none</span>;
+				<span class="note">/* left | right | both */</span>
+			</p>
+		</li>
+		<li></li>
+		<li>
+			<p>
+				<span class="note">
+					/* Dimension */
+				</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">width</span>:<span class="number">100</span><span class="unit">%</span>;
+				<span class="note">/* min | max */</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">height</span>:<span class="number">100</span><span class="unit">%</span>;
+				<span class="note">/* min | max */</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">resize</span>:<span class="value">none</span>;
+				<span class="note">/* horizontal | vertical | both */</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">overflow</span>:<span class="value">visible</span>;
+				<span class="note">/* hidden | scroll | auto */</span>
+			</p>
+		</li>
+		<li></li>
+		<li>
+			<p>
+				<span class="note">
+					/* Flexible Box */
+				</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">-webkit-box-align</span>:<span class="value">stretch</span>;
+				<span class="note">/* start | end | center | baseline */</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">-webkit-box-pack</span>:<span class="value">start</span>;
+				<span class="note">/* end | center | justify */</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">-webkit-box-direction</span>:<span class="value">reverse</span>;
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">-webkit-box-flex</span>:<span class="number">1</span>;
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">-webkit-box-ordinal-group</span>:<span class="number">1</span>;
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">-webkit-box-orient</span>:<span class="value">inline-axis</span>;
+				<span class="note">/* horizontal | vertical | block-axis */</span>
+			</p>
+		</li>
+		<li></li>
+		<li>
+			<p>
+				<span class="note">
+					/* Multi-column */
+				</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">-webkit-column-count</span>:<span class="value">auto</span>;
+				<span class="note">/* number */</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">-webkit-column-width</span>:<span class="value">auto</span>;
+				<span class="note">/* length */</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">-webkit-column-gap</span>:<span class="value">normal</span>;
+				<span class="note">/* length */</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">-webkit-column-rule</span>:<span class="number">1</span><span class="unit">px</span> <span class="value">none</span> <span class="number">#000</span>;
+				<span class="note">/* hidden | dootted | dashed | solid | double | groove | ridge | inset | outset */</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">-webkit-column-span</span>:<span class="value">all</span>;
+				<span class="note">/* 1 */</span>
+			</p>
+		</li>
+		<li></li>
+		<li>
+			<p>
+				<span class="note">
+					/* Margin &amp; Padding */
+				</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">margin</span>:<span class="number">0</span>;
+				<span class="note">/* auto */</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">padding</span>:<span class="number">0</span>;
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">box-sizing</span>:<span class="value">content-box</span>;
+				<span class="note">/* border-box */</span>
+			</p>
+		</li>
+		<li></li>
+		<li>
+			<p>
+				<span class="note">
+					/* Border */
+				</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">border</span>:<span class="number">1</span><span class="unit">px</span> <span class="value">solid</span> <span class="number">#000</span>;
+				<span class="note">/* dotted | dashed | double */</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">outline</span>:<span class="number">1</span><span class="unit">px</span> <span class="value">solid</span> <span class="number">#000</span>;
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">outline-offset</span>:<span class="number">0</span>;
+				<span class="note">/* length */</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">border-radius</span>:<span class="number">2</span><span class="unit">px</span>;
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">box-shadow</span>:<span class="number">2</span><span class="unit">px</span> <span class="number">2</span><span class="unit">px</span> <span class="number">2</span><span class="unit">px</span> <span class="number">#000</span>,<span class="number">2</span><span class="unit">px</span> <span class="number">2</span><span class="unit">px</span> <span class="number">2</span><span class="unit">px</span> <span class="number">#000</span> <span class="value">inset</span>;
+			</p>
+		</li>
+		<li></li>
+		<li>
+			<p>
+				<span class="note">
+					/* Background */
+				</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">background-attachment</span>:<span class="value">scroll</span>;
+				<span class="note">/* fixed */</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">background-color</span>:<span class="value">transparent</span>;
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">background-image</span>:<span class="value">url</span>(<span class="url">xxx.png</span>);
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">background-position</span>:<span class="number">0</span> <span class="number">0</span>;
+				<span class="note">/* center | top | right | bottom | left */</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">background-repeat</span>:<span class="value">repeat</span>;
+				<span class="note">/* repeat-x | repeat-y | no-repeat */</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">background-clip</span>:<span class="value">border-box</span>;
+				<span class="note">/* padding-box | content-box */</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">background-origin</span>:<span class="value">padding-box</span>;
+				<span class="note">/* border-box | content-box */</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">background-size</span>:<span class="number">100</span><span class="unit">%</span> <span class="value">auto</span>;
+			</p>
+		</li>
+		<li></li>
+		<li>
+			<p>
+				<span class="note">
+					/* Color */
+				</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">color</span>:<span class="number">#555</span>;
+			</p>
+		</li>
+		<li></li>
+		<li>
+			<p>
+				<span class="note">
+					/* Font */
+				</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">font-family</span>:<span class="string">'Consolas'</span>;
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">font-size</span>:<span class="number">14</span><span class="unit">px</span>;
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">font-style</span>:<span class="value">normal</span>;
+				<span class="note">/* italic | oblique */</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">font-variant</span>:<span class="value">normal</span>;
+				<span class="note">/* small-caps */</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">font-weight</span>:<span class="value">normal</span>;
+				<span class="note">/* bold | bolder | lighter | 100-900 */</span>
+			</p>
+		</li>
+		<li></li>
+		<li>
+			<p>
+				<span class="note">
+					/* Text */
+				</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">text-decoration</span>:<span class="value">none</span>;
+				<span class="note">/* underline | overline | line-through | blink */</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">text-align</span>:<span class="value">left</span>;
+				<span class="note">/* right | center | justify */</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">vertical-align</span>:<span class="value">baseline</span>;
+				<span class="note">/* sub | sup | super | top | middle | bottom | text-top | text-bottom */</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">white-space</span>:<span class="value">normal</span>;
+				<span class="note">/* pre | nowrap | pre-wrap | pre-line */</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">direction</span>:<span class="value">ltr</span>;
+				<span class="note">/* rtl */</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">letter-spacing</span>:<span class="value">normal</span>;
+				<span class="note">/* length */</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">word-spacing</span>:<span class="value">normal</span>;
+				<span class="note">/* length */</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">line-height</span>:<span class="value">normal</span>;
+				<span class="note">/* number | length | % */</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">text-align</span>:<span class="value">left</span>;
+				<span class="note">/* right | center | justify */</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">text-indent</span>:<span class="value">0</span>;
+				<span class="note">/* length | % | em */</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">text-transform</span>:<span class="value">none</span>;
+				<span class="note">/* capitalize | uppercase | lowercase */</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">text-overflow</span>:<span class="value">clip</span>;
+				<span class="note">/* ellipsis [overflow:hidden;white-space:nowrap;]*/</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">text-shadow</span>:<span class="number">2</span><span class="unit">px</span> <span class="number">2</span><span class="unit">px</span> <span class="number">1</span><span class="unit">px</span> <span class="value">rgba</span>(<span class="number">0,0,0,.4</span>)</span>;
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">word-break</span>:<span class="value">normal</span>;
+				<span class="note">/* break-all | keep-all */</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">word-wrap</span>:<span class="value">normal</span>;
+				<span class="note">/* break-word */</span>
+			</p>
+		</li>
+		<li></li>
+		<li>
+			<p>
+				<span class="note">
+					/* Content */
+				</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="se">:before</span>{<span class="attr">content</span>:<span class="string">"("</span>attr(<span class="key">href</span>)<span class="string">")"</span>}
+			</p>
+		</li>
+		<li></li>
+		<li>
+			<p>
+				<span class="note">
+					/* Transform */
+				</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">transform</span>:translate(<span class="number">0</span>,<span class="number">0</span>) scale(<span class="number">1</span>,<span class="number">1</span>) rotate(<span class="number">0</span><span class="unit">deg</span>) skew(<span class="number">0</span>,<span class="number">0</span>);
+				<span class="note">/* 2D:X,Y | 3D:X,Y,Z | matrix(n,n,n,n,n,n)*/</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">transform-origin</span>:<span class="value">center center</span>;
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">transform-style</span>:<span class="value">flat</span>;
+				<span class="note">/* preserve-3d */</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">perspective</span>:<span class="number">500</span>;
+			</p>
+		</li>
+		<li></li>
+		<li>
+			<p>
+				<span class="note">
+					/* Transition */
+				</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">transition-property</span>:<span class="value">all</span>;
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">transition-duration</span>:<span class="number">.3</span><span class="unit">s</span>;
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">transition-timing-function</span>:<span class="value">ease</span>;
+				<span class="note">/* linear | ease-in | ease-out | ease-in-out | cubic-bezier(n,n,n,n) */</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">transition-delay</span>:<span class="number">.1</span><span class="unit">s</span>;
+			</p>
+		</li>
+		<li></li>
+		<li>
+			<p>
+				<span class="note">
+					/* Animation */
+				</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">animation-name</span>:<span class="value">show</span>;
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">animation-duration</span>:<span class="number">1</span><span class="unit">s</span>;
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">animation-timing-function</span>:<span class="value">ease</span>;
+				<span class="note">/* linear | ease-in | ease-out | ease-in-out | cubic-bezier(n,n,n,n) */</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">animation-delay</span>:<span class="number">1</span><span class="unit">s</span>;
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">animation-iteration-count</span>:<span class="number">1</span>;
+				<span class="note">/* infinite */</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">animation-direction</span>:<span class="value">normal</span>;
+				<span class="note">/* alternate */</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">animation-play-state</span>:<span class="value">running</span>;
+				<span class="note">/* paused */</span>
+			</p>
+		</li>
+		<li>
+			<p>
+				<span class="attr">animation-fill-mode</span>:<span class="value">none</span>;
+				<span class="note">/* forwards | backwards | both */</span>
+			</p>
+		</li>
+		<li>
+			<p>}</p>
+		</li>
+	</ol>
+	<script src="assets/js/vendor/jquery.js"></script>
+	<script src="assets/js/app.js"></script>
+</body>
+</html>
